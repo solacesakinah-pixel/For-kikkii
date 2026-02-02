@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>For My Twin 🫂</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #ffe6f0, #e6f7ff);
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .box {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    h1 {
+      font-size: 1.6rem;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      background: #ff6f91;
+      color: white;
+    }
+
+    button:hover {
+      background: #ff4f7a;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    img {
+      margin-top: 20px;
+      width: 100%;
+      border-radius: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <h1 id="title">
+      Welcome twin 😭💗<br>
+      its your Mans AMANI😭🙏
+    </h1>
+
+    <button id="btn1" onclick="stepOne()">click me</button>
+
+    <div id="message" class="hidden">
+      <p>I wanted to show you this since the morning</p>
+      <p><strong>finallyyyy 😭😭</strong></p>
+
+      <button onclick="stepTwo()">okay show me 👀</button>
+    </div>
+
+    <div id="meme" class="hidden">
+      <img 
+        src="https://i.pinimg.com/736x/91/1a/df/911adfb1d003b778db76b03cd1f23942.jpg"
+        alt="Pigeon with sneakers meme"
+      />
+      <p>what did you expect?</p>
+    </div>
+  </div>
+
+  <script>
+    function stepOne() {
+      document.getElementById("btn1").style.display = "none";
+      document.getElementById("message").classList.remove("hidden");
+    }
+
+    function stepTwo() {
+      document.getElementById("meme").classList.remove("hidden");
+    }
+  </script>
+
+</body>
+</html>
